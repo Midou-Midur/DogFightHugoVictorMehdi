@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="224fd445-a114-4883-a554-64c4f97116db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/Cloud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/Dimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/DogfightModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/IArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/IDogfightModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/IMobile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/Missile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/Plane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/Sky.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DogFightHugoVictorMehdi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DogFightHugoVictorMehdi.iml" afterDir="false" />
-    </list>
+    <list default="true" id="224fd445-a114-4883-a554-64c4f97116db" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/DogfightModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#991#992#0" expanded="true" />
@@ -180,15 +166,15 @@
       <option name="presentableId" value="Default" />
       <updated>1556796653019</updated>
       <workItem from="1556796654285" duration="932000" />
-      <workItem from="1556797613519" duration="5150000" />
+      <workItem from="1556797613519" duration="6360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6082000" />
+    <option name="totallyTimeSpent" value="7292000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="840" extended-state="0" />
+    <frame x="762" y="0" width="781" height="840" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30705395" />
@@ -305,8 +291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DogFightHugoVictorMehdiCode/src/jpu2016/dogfight/model/DogfightModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#991#992#0" expanded="true" />

@@ -3,7 +3,11 @@ package jpu2016.dogfight.model;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Point;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+
+import javax.imageio.ImageIO;
 
 public class Mobile implements IMobile {
 	protected static int speed;
@@ -23,7 +27,6 @@ public class Mobile implements IMobile {
 		Mobile.width = width;
 		Mobile.height = height;
 		Images = new ArrayList<Image>();
-		
 	}
 
 	@Override
@@ -71,7 +74,17 @@ public class Mobile implements IMobile {
 
 	@Override
 	public void placeInArea(IArea area) {
-
+		Image jetDroit, jetGauche, missile;
+		try {
+			jetDroit = ImageIO.read(new File("jetADroite.jpg"));
+			jetGauche = ImageIO.read(new File("jetAGauche.jpg"));
+			missile = ImageIO.read(new File("missile.jpg"));
+			Images.add(jetGauche);
+			Images.add(jetDroit);
+			Images.add(missile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -81,21 +94,22 @@ public class Mobile implements IMobile {
 	}
 
 	public void moveUp() {
-
+		this.direction = Direction.UP;
 	}
 
 	public void moveRight() {
-
+		this.direction = Direction.RIGHT;
 	}
 
 	public void moveDown() {
-
+		this.direction = Direction.DOWN;
 	}
 
 	public void moveLeft() {
-
+		this.direction = Direction.LEFT;
 	}
 
+	//Composant Vue
 	public Color getColor() {
 		return null;
 
@@ -108,7 +122,6 @@ public class Mobile implements IMobile {
 
 	@Override
 	public void setDogfightMdel(DogfightModel dogfightModel) {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -121,8 +134,14 @@ public class Mobile implements IMobile {
 	}
 
 	public Image getImage() {
-		return null;
+		Image sky = null;
+		try {
+			sky = ImageIO.read(new File("sky.pjg"));
+			Images.add(sky);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return sky;
 
 	}
-
 }

@@ -1,5 +1,6 @@
 package jpu2016.dogfight.model;
 
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Observable;
 
@@ -9,6 +10,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	public DogfightModel() {
 		Dimension dimension = null;
 		sky = new Sky(dimension);
+		
 	}
 
 	@Override
@@ -19,7 +21,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 
 	@Override
 	public void buildArea(Dimension dimension) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
