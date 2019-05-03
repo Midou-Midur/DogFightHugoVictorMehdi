@@ -6,6 +6,22 @@ public class Cloud extends Mobile {
 	private final String IMAGE = "cloud";
 
 	public Cloud(Direction direction, Dimension dimension) {
-		super(direction, position, dimension, speed, width, height,image );
+		super(direction, position, dimension, speed, width, height,image);
+	}
+
+	public int getSPEED() {
+		return SPEED;
+	}
+
+	public int getWIDTH() {
+		return WIDTH;
+	}
+
+	public int getHEIGHT() {
+		return HEIGHT;
+	}
+
+	public String getIMAGE() {
+		return IMAGE;
 	}
 }

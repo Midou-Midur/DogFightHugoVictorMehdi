@@ -15,6 +15,7 @@ public class Mobile implements IMobile {
 	protected static int speed;
 	protected static int width;
 	protected static int height;
+	protected static int posSprite;
 	private Direction direction;
 	private ArrayList<Image> Images;
 	protected static Dimension dimension;
@@ -82,6 +83,25 @@ public class Mobile implements IMobile {
 
 	}
 
+	// Méthode que j'ai ajouté pour trouver la position d'un sprite
+	@Override
+	public int getPosSprite(double x, double y, Image img) {
+		Image jetDroit, jetGauche, missile, sky;
+		try {
+			jetDroit = ImageIO.read(new File("jetADroite.jpg"));
+			jetGauche = ImageIO.read(new File("jetAGauche.jpg"));
+			missile = ImageIO.read(new File("missile.jpg"));
+			sky = ImageIO.read(new File("sky.jpg"));
+			Images.add(jetGauche);
+			Images.add(jetDroit);
+			Images.add(missile);
+			Images.add(sky);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return Mobile.posSprite;
+	}
+
 	@Override
 	public void placeInArea(IArea area) {
 		Image jetDroit, jetGauche, missile;
@@ -107,13 +127,14 @@ public class Mobile implements IMobile {
 			Images.add(jetDroit);
 			if (player == 1) {
 				System.out.println(jetGauche);
+
 			} else {
 				System.out.println(jetDroit);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return false;
+		return true;
 
 	}
 
@@ -159,23 +180,21 @@ public class Mobile implements IMobile {
 
 	/*
 	 * (non-Javadoc)
-	 * @see jpu2016.dogfight.model.IMobile#hit()
-	 * Afin de savoir si un avion touche un autre,
-	 * il faut que le missile lancé le touche : position(avions2)=missile(avions1) et inversement
+	 * 
+	 * @see jpu2016.dogfight.model.IMobile#hit() Afin de savoir si un avion touche
+	 * un autre, il faut que le missile lancé le touche :
+	 * position(avions2)=missile(avions1) et inversement
 	 */
 	public boolean hit() {
 		Image missile = null, jetDroit = null, jetGauche = null;
 		boolean hit = false;
 		try {
-
-			missile = ImageIO.read(new File("missile.jpg"));	
+			missile = ImageIO.read(new File("missile.jpg"));
 			jetGauche = ImageIO.read(new File("jetAGauche.jpg"));
 			missile = ImageIO.read(new File("missile.jpg"));
 			Images.add(missile);
 			Images.add(jetGauche);
 			Images.add(jetDroit);
-			
-			
 
 		} catch (IOException e) {
 			e.printStackTrace();

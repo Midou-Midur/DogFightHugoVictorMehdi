@@ -2,6 +2,7 @@ package jpu2016.dogfight.model;
 
 public class Position {
 	private double x, y, maxX, maxY;
+	Position position;
 	
 	public Position(double x, double y, double maxX, double maxY) {
 		this.setX(x);
@@ -10,7 +11,7 @@ public class Position {
 		this.maxY = maxY;
 	}
 	public Position(Position position) {
-		
+		this.position = position;
 	}
 	public double getX() {
 		return x;
@@ -25,9 +26,9 @@ public class Position {
 		this.y = y;
 	}
 	protected void setMaxX(double maxX) {
-		
+		this.maxX = maxX;
 	}
 	protected void setMaxY(double maxY) {
-		
+		this.maxY = maxY;
 	}
 }
