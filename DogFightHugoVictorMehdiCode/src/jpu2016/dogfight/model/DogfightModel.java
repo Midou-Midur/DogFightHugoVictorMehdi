@@ -1,58 +1,68 @@
 package jpu2016.dogfight.model;
 
-import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Observable;
 
 public class DogfightModel extends Observable implements IDogfightModel {
 	private Sky sky;
+	private Direction direction;
+	private ArrayList<IMobile> mobiles;
+	int player;
+	Position position;
+	static String image = "";
+	public static DogfightModel dogfightModel;
 
 	public DogfightModel() {
 		Dimension dimension = null;
 		sky = new Sky(dimension);
-		
+		mobiles = new ArrayList<IMobile>();
 	}
 
 	@Override
 	public IArea getArea() {
-		// TODO Auto-generated method stub
-		return null;
+		IArea area = sky;
+		return area;
 	}
 
 	@Override
 	public void buildArea(Dimension dimension) {
-		
 
+		Cloud sky = new Cloud(direction, dimension);
+		Plane plane1 = new Plane(player, direction, position, image);
 	}
 
 	@Override
 	public void addMobile(IMobile Mobile) {
-		// TODO Auto-generated method stub
+		mobiles.add(Mobile);
 
 	}
 
 	@Override
 	public void removeMobile(IMobile Mobile) {
-		// TODO Auto-generated method stub
+		mobiles.remove(Mobile);
 
 	}
 
 	@Override
 	public ArrayList<IMobile> getMobiles() {
-		// TODO Auto-generated method stub
-		return null;
+		return mobiles;
 	}
 
+	//jsp
 	@Override
 	public IMobile getMobileByPlaner(int player) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see jpu2016.dogfight.model.IDogfightModel#setMobilesHavesMoved()
+	 * modifier les Mobile qui ont bougé
+	 */
 	@Override
 	public void setMobilesHavesMoved() {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	public Sky getSky() {
@@ -61,5 +71,9 @@ public class DogfightModel extends Observable implements IDogfightModel {
 
 	public void setSky(Sky sky) {
 		this.sky = sky;
+	}
+
+	public void setMobiles(ArrayList<IMobile> mobiles) {
+		this.mobiles = mobiles;
 	}
 }

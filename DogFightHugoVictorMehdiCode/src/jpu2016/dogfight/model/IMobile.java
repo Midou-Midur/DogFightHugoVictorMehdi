@@ -10,7 +10,6 @@ public interface IMobile {
     public int getWidth();
     public int getHeight();
     public int getSpeed();
-    public int getPosSprite(double x, double y, Image img);
     public Image getImage();
     public void move();
     public void placeInArea(IArea area);

@@ -9,7 +9,7 @@ public class Dimension {
 	}
 
 	public Dimension(Dimension dimension) {
-
+		
 	}
 
 	public int getWidth() {

@@ -7,6 +7,7 @@ public class Cloud extends Mobile {
 
 	public Cloud(Direction direction, Dimension dimension) {
 		super(direction, position, dimension, speed, width, height,image);
+		dimension = new Dimension(dimension);
 	}
 
 	public int getSPEED() {
