@@ -235,7 +235,6 @@ public class Mobile implements IMobile {
 
 	}
 
-	//
 	@Override
 	public void setDogfightModel(DogfightModel dogfightModel) {
 		DogfightModel.dogfightModel = dogFightModel;
